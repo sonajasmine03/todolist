@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+  }
+  .container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(164deg,#eaec65,#b9b1d6);
+    padding: 10px;
+  }
+  h2{
+    display: flex;
+    justify-content: center;
+  }
+  #loginPage{
+    width: 100%;
+    max-width: 200px;
+    background: #fff;
+    margin: 100px auto 20px;
+    padding: 20px 10px 20px 10px;
+    border-radius: 10px;
+    font-size: 10px;
+    line-height: 23px;
+  }
+  input{
+    border: solid #aaa 1px;
+      border-radius: 4px;
+      font-size: 10px;
+      padding: 3px 30px 3px 10px;
+      outline: none;
+      background: beige;
+  }
+  #loginForm{
+    margin-left: 10px;
+  }
+  button{
+    margin-top: 14px;
+    background:beige;
+    border: none;
+    outline: none;
+    padding: 5px;
+    border-radius: 5px;
+  }
+  button a{
+    text-decoration: none;
+    color: black;
+  }
+  button:hover{
+    background-color: #eaec65;
+  }
+  @media(max-width:800px){
+    .center{
+      width: 550px;
+      height: 650px;
+    }
+  }
+  @media(max-width:400px){
+    .center{
+      width: 450px;
+      height: 550px;
+    }
+  }
+  @media(max-width:300px){
+    .center{
+      width: 400px;
+      height: 500px;
+    }
+  }

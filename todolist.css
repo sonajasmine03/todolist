@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+  }
+  .container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(164deg,#eaec65,#b9b1d6);
+    padding: 10px;
+  }
+  .todo_app{
+    width: 100%;
+    max-width: 540px;
+    background: #fff;
+    margin: 100px auto 20px;
+    padding: 40px 30px 30px 40px;
+    border-radius: 10px;
+  }
+  .todo_app h2{
+  color: #192942;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  justify-content: center;
+  }
+  .todo_app h2 img{
+  width: 40px;
+  margin-left: 15px;
+  }
+  .row{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:#ebe8e8;
+  border-radius:30px;
+  padding-left: 20px;
+  margin-bottom: 25px;
+  }
+  input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-size: 14px;
+  }
+  button{
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: rgb(233, 187, 100);
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 30px;
+  }
+  button:hover{
+    background:rgb(226, 118, 118);
+  }
+  ul li{
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position:relative;
+  }
+  ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+   
+    background-image: url(pictures/unchecked.png);
+    background-size: cover;
+    background-position:center;
+    top: 8px;
+    left: 10px;
+  }
+  ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+  }
+  ul li.checked::before{
+    background-image: url(pictures/checked.png);
+    
+  }
+  ul li span{
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    font-size: 20px;
+    color:#192942;
+    text-align: center;
+    border-radius: 40%;
+  }
+  ul li span:hover{
+   color: red;
+  }
+  @media(max-width:800px){
+    .center{
+      width: 350px;
+      height: 450px;
+    }
+  }
+  @media(max-width:400px){
+    .center{
+      width: 250px;
+      height: 350px;
+    }
+  }
+  @media(max-width:300px){
+    .center{
+      width: 200px;
+      height: 300px;
+    }
+  }
